@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desenvolvimento frontend</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="site2">Outra página</div>
+    <h1 style="text-align: center;"> Tecnologias necessárias para atuar no frontend</h1>
+    <p>Aqui, eu mostro por quais materiais eu tiro meus conhecimentos desta área da programação. Divido meu cronograma semanal em estudar Html5 e Css3 juntos e o Javascript separadamente. As três tecnologias eu vejo com o supracitado professor. No caso da dupla, estou prestes a entrar no módulo 2, com o certificado do primeiro já em mãos.</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/vPNIAJ9B4hg?si=7CkpHY7xwO1ZuaiY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <p><a href="https://www.youtube.com/watch?v=vPNIAJ9B4hg&list=PLHz_AreHm4dlUpEXkY1AyVLQGcpSgVF8s" target="_blank" rel="external">veja aqui o curso completo do módulo 2 de Html 5 e Css3</a></p>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/1-w1RfGIov4?si=brw8cyDss4BZtC3g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <p><a href="https://www.youtube.com/watch?v=1-w1RfGIov4&list=PLHz_AreHm4dlsK3Nr9GVvXCbpQyHQl1o1" target="_blank" rel="external">Acompanhe o curso completo de Javascript clicando aqui</a></p>
+
+    <p><a href="des.html" target="_self" rel="prev">Voltar para a página inicial</a></p>
+
+    <script>
+        var a = window.document.getElementById("site2")
+        a.addEventListener("click", clicar)
+        a.addEventListener("mouseenter", entrar)
+        a.addEventListener("mouseout", sair)
+
+        function clicar(){
+            a.innerText="Clicou! Prossiga..."
+            a.style.background="red"
+        }
+        function entrar(){
+            a.innerText="Você entrou na <div>..."
+        }
+        function sair() {
+            a.innerText="Você saiu da <div>..."
+            a.style.background="blue"
+        }
+    </script>
+</body>
+</html>

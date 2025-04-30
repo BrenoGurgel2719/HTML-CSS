@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias de imagens</title>
+    <style>
+        img{
+
+            max-width: 100%;
+            height: auto;
+        }
+
+        body{
+            color: rgb(58, 7, 3);
+            background-color: rgb(50, 10, 141);
+        }
+
+        
+    </style>
+</head>
+<body>
+
+    <h1>Visualizando imagens</h1>
+    <p>Veja como imagens de tamanhos diferentes se adaptam a dispositivos de telas de tamanhos divesos:</p>
+
+    <picture>
+         <source media="(max-width: 750px )" srcset="imagens/foto-p.png" type="image/png">
+         <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+         <img src="imagens/foto-g.png" alt="Imagem padrão de flexibilidade">
+    </picture>
+
+   <h1>Reproduzindo áudios</h1>
+   <p>Veja abaixo como estar um áudio na minha página web:</p>
+    <audio preload="metadata" autoplay controls>
+         <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+         <source src="midia/Dub Hub (Sting) - Jimmy Fontanez_Media Right Productions.ogg" type="audio/ogg">
+         <source src="midia/guanacast-33.wav" type="audio/wav">
+         <p>Navegador incompatível com o formato de aúdio. <a href="midia/Dub Hub (Sting) - Jimmy Fontanez_Media Right Productions.mp3">Clique aqui para baixar o áudio</a></p>
+
+    </audio>
+</body>
+</html>

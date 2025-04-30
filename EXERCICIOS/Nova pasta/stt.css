@@ -1,0 +1,29 @@
+@charset  "UTF-8";
+
+
+html, body{
+  margin : 0;
+  padding: 0;
+}
+
+header img{
+  width: 100px;
+}
+
+aside img{
+  width: 190px;
+}
+ul li:hover{
+  color: black;
+  text-decoration: underline;
+}
+nav a{
+  text-decoration: none;
+}
+
+nav a:hover{
+  color: black;
+  text-decoration: underline;
+  font-weight: bolder;
+  font-size: 19px;
+}

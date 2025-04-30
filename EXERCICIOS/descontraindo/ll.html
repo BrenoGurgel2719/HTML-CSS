@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsabilidade</title>
+  <style>
+   @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+   @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+   
+   @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+   *{
+      margin: 0;
+      padding: 0;
+    }
+
+    nav a{
+      text-decoration: none;
+      margin: 10px;
+      color: white;
+      font-family:  "Roboto", sans-serif;;
+      
+    }
+
+    nav a:hover{
+      text-decoration: underline;
+      color: black;
+      transform: scale(1.05);
+     
+    }
+
+    header{
+      background-image: linear-gradient(to bottom, rgb(44, 44, 209), rgb(20, 20, 129));
+      padding: 20px;
+    }
+
+    header h1{
+      text-align: center;
+      color: white;
+      font-family: "Bebas Neue", sans-serif;;
+    }
+
+    main{
+      background-color: white;
+      margin: 0 300px;
+      margin-bottom: 20px;
+      padding: 10px;
+      min-width: 200px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    main img{
+      width: 100%;
+    }
+
+    main>h1{
+      text-align: center;
+    }
+
+    body{
+      background-color: gray;
+    }
+    footer{
+      text-align: center;
+      background-color: rgb(18, 82, 10);
+      color: white;
+      font-family: 'Times New Roman', Times, serif;
+    }
+
+    .btn{
+      
+      margin: 15px 0 20px;
+    padding: 12px 20px;
+    background-color: #ff0000;
+    color: #fff;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.7rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 0 10px #ff0000;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-bottom: 10px;
+}
+
+.btn:hover {
+    background-color: #cc0000;
+    transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+<header>
+  <h1>Meu site doido</h1>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Notícias</a>
+    <a href="#">Closethes</a>
+    <a href="#">Área dos malucos</a>
+  </nav>
+</header>
+
+  <main>
+    <h1>Fazendo meus testes iniciais...</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum amet ullam veniam dicta laboriosam culpa minima repellat, maiores consectetur! Asperiores minima sint molestias culpa delectus assumenda fugiat consequuntur molestiae velit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, facilis placeat? Eligendi porro vel mollitia ipsa distinctio, aut, ipsam esse minus hic soluta, voluptate nemo! Quas est mollitia laborum ipsa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere cumque excepturi necessitatibus vero in dolor quaerat, ab fuga eius facilis quos totam saepe aliquid eaque nulla maxime at possimus corporis?</p>
+    <img src="dino.jpg" alt="dino fresco" title="Dinossauro bodybuilder">
+    <button class="btn" onclick="rugido.play()">Ouça o dino rugir!</button>
+    <audio id="rugido" src="rugido.mp3" preload="auto"></audio>
+  </main>
+
+  <footer>
+    By Breno Gurgel
+  </footer>
+
+</body>
+</html>

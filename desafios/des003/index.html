@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hora do show</title>
+    <link rel="shortcut icon" href="midia/Yootheme-Social-Bookmark-Social-google-button-blue.512.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+     <div id="site">Meu site</div>
+    <h1 style="text-decoration: underline;">Seja bem vindo(a) a mais uma apresentação</h1>
+    <p>No episódio de hoje, iremos tentar usar todos os conhecimentos transmitidos pelo <strong>professor Gustavo Guanabara</strong> ao longo do curso <strong>"Html5 e Css3"</strong>, bem como, na medida do possível e da razoabilidade, aqueles aprendidos no curso de <strong>Javascript</strong>, ministrado pelo mesmo professor. Vai ser mais uma oportunidade de colocar em prática e solidificar o que eu sei, desafiando-me constantemente. Boa jornada! </p>
+
+    <h2>O que eu estou tentando fazer?</h2>
+    <p>Sou uma pessoa que idealizo objetivos a serem concreizados ao longo de minha vida. Posso dividí-los em <strong>financeiros/profissionais</strong> e de <strong>experiências</strong>.</p>
+    <h3 style="text-align: center;">Financeiros/profissinais</h3>
+    <img src="midia/log-cef-200px.webp" alt="caixa logotipo">
+    <p>Trabalho atualmente como TBN da CEF. Este estável emprego vai me perimitir conquistar outras fontes de renda, as quais eu sempre asipirei, mas, com o outrora obtáculo do desemprego, nunca consegui torná-los realidade. Estou focando atualmente no desenvolvimento frontend e no gerenciamento de campanhas pela plataforma Google Ads. Dentre estes, o foco estar concentrado na criação de sites e páginas na web, pois o segundo foco depende desses conhecimentos para fluir plenamente e independentemente. Veja abaixo minhas ferramentas com as quais eu busco quotidianamente aprender e aprender:</p>
+
+    <ul>
+        <li><a href="arquivo2.html" target="_self" rel="next">Desenvolvimento frontend</a></li>
+        <li><a href="arquivo3.html" target="_self" rel="next">Google Ads</a></li>
+   <h3 style="text-align: center;">Objetivos de experiências</h2>
+        <p>Bom, nesta parte, eu busco basicamente acontecimentos que eu sempre sonhei em fazer. Dentro deste conceito, entra aqui questões filosóficas e espirituais e metafísicas, além também de conhecer lugares que mexem com minha imaginação. A lista realmente é ampla e infelizmente não é possível colocar todos seus ítens aqui. Porém, posso ao menos trazer aqueles mais relavantes para mim. Dê só uma olhada:</p>
+        <ul style="list-style-type: disc; color: rgb(127, 129, 8);">
+            <li>Deus, quem é?</li>
+            <li>Origem da vida</li>
+            <li>Vida extraterestre?</li>
+            <li>O que acontece após a morte?</li>
+        </ul>
+    </ul>
+    <img src="midia/igreja-310.jpg" alt="Igreja paris matriz">  <img src="midia/papiro-340.jpg" alt="">
+
+    <h2>Quem sou eu?</h2>
+    <p>Breno Gurgel, de 22 anos, nascido em Mossoró/Rn no dia 02/12/2002, mora juntamente com sua esposa em Parelhas/RN. Trabalho na Caixa econômica como técnico bancário novo, tendo ingressado recentemnete através do concuros público de 2024.</p>
+    <p><strong>Ouça minha voz:</strong></p>
+
+    <audio controls autoplay loop preload="metadata">
+        <source src="midia/voice_23-02-2025_15-37-08.ogg" type="audio/ogg">
+    </audio>
+
+    <script>
+        var a = window.document.getElementById("site")
+        a.addEventListener("click", clicar)
+        a.addEventListener("mouseenter", entrar)
+        a.addEventListener("mouseout", sair)
+
+        function clicar(){
+            a.innerText="Clicou! Prossiga..."
+            a.style.background="red"
+        }
+        function entrar(){
+            a.innerText="Você entrou na <div>..."
+        }
+        function sair() {
+            a.innerText="Você saiu da <div>..."
+            a.style.background="blue"
+        }
+    </script>
+
+    
+</body>
+</html>

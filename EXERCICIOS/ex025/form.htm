@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        form{
+            background-color: #790d8f;
+            margin: 0 auto;
+            width: 400px;
+            padding: 1em;
+            border: 1px solid #ccc;
+            border-radius: 1em;
+        }
+
+        form div + div{
+            margin-top: 1em;
+        }
+
+        label{
+            display: inline-block;
+            width: 90px;
+            text-align: right;
+            color: white;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        input, textarea{
+            font: 1em sans-serif;
+            width: 300px;
+           -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            border: 1px solid #999;
+            padding: 0 2px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        input:focus, textarea:focus{
+            border-color: rgb(17, 75, 114);
+        }
+
+        textarea{
+            vertical-align: top;
+            height: 5em;
+            resize: vertical;
+        }
+
+        .btn{
+            padding-left: 90px;
+            margin-left: 0.5em;
+            transition: 0.2s;
+            border: none;
+            transition: transform 0.2s ease, background-color 0.2s ease;
+           
+            
+        }
+
+        .btn:hover{
+            transform: scale(1.02);
+            transform-origin: center;
+            backface-visibility: hidden;
+    -webkit-font-smoothing: antialiased;
+    will-change: transform;
+        }
+    </style>
+</head>
+<body>
+<h1>Criando formulários HTML</h1>
+
+<form >
+    
+    <div>
+        <label for="name">Nome:</label>
+        <input type="text" id="name" >
+    </div>
+    
+    <div>
+        <label for="email">Email:</label>
+        <input type="email"  id="email">
+    </div>
+    
+    <div>
+        <label for="sms">Deixe seu comentário:</label>
+        <textarea id="sms"></textarea>
+    </div>
+
+    <div class="btn">
+        <button type="button">Enviar mensagem</button>
+    </div>
+
+</form>
+</body>
+</html>

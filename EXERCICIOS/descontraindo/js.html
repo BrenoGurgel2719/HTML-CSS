@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <link rel="shortcut icon" href="fav.ico" type="image/x-icon">
+    <style>
+       
+       @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+       
+       @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+       
+       
+       @font-face {
+            font-family: "fonte-p";
+            src: url("ttg.ttf") format("truetype");
+        }
+
+        h1, h2,p{
+            font-family: "Open Sans", sans-serif;
+        }
+
+        .spinner {
+        border: 8px solid #cac3c3; /* fundo */
+        border-bottom: 8px solid rgb(15, 22, 129); /* parte azul giratória */
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        animation: girar 3s linear infinite;
+        margin: 20px auto;
+
+        
+        
+    }
+    @keyframes girar {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+
+    h1,p{
+        text-align: center;
+    }
+
+   
+    </style>
+</head>
+<body>
+    <h1>Criando "spinner" com Javascript!</h1>
+   <p>Click no botão para gerar um spinner: <button id="but">Gerar spinner</button></p>
+
+   <div id="loader" style="display: none;">
+      <div class="spinner"></div>
+   </div>
+   
+
+<p id="imagem"></p>
+   
+   
+   <script>
+       var parah = window.document.getElementById("pra")
+       var botao = window.document.getElementById("but")
+       botao.addEventListener("click", clicar)
+
+       function clicar(){
+       
+        loader.style.display = "block";
+        imagem.innerHTML = "";
+        setTimeout(function () {
+            loader.style.display = "none"; // Esconde o carregador
+
+            var img = document.createElement("img");
+            img.setAttribute("src", "dino.jpg");
+            img.setAttribute("alt", "Imagem carregada");
+            img.style.maxWidth = "300px";
+
+            imagem.appendChild(img);
+        }, 10000); // Espera 2 segundos (2000 milissegundos)
+
+       }
+   </script>
+</body>
+</html>

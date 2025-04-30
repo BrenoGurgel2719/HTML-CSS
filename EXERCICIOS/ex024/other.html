@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conceito</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+
+        body{
+            margin: 0;
+            padding: 0;
+        }
+
+        div.navbar{
+            background-color: #333;
+            padding: 10px 20px;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .menu{
+            flex-direction: column;
+            gap: 10px;
+            background-color: #444;
+            padding: 10px;
+            display: none;
+            
+        }
+
+        .menu a {
+            color: white;
+            text-decoration: none;
+            display: inline-block;
+            transition: 0.2s;
+            font-weight: bold;
+        }
+
+        .hamburger{
+            cursor: pointer;
+            font-size: 24px;
+            border: none;
+            background: none;
+            color: white;
+         }
+
+         .menu a:hover{
+            color: black;
+            background: #181616;
+            width: 63px;
+         }
+
+
+    </style>
+</head>
+<body>
+    <h1>Vamos criar um menu hamburger com HTML, CSS e JAVASCRIPT</h1>
+
+    <div class="navbar">
+        <span>Meu site</span>
+        <button class="hamburger" id="btn-menu">&#9776;</button>
+    </div>
+
+    <nav class="menu" id="menu">
+        <a href="#">Home</a>
+        <a href="#">Notícias</a>
+        <a href="#">Educação</a>
+        <a href="#">Projetos</a>
+        <a href="#">Doações</a>
+    </nav>
+
+    <script>
+        const menu = document.getElementById("menu")
+        const botao = document.getElementById("btn-menu")
+
+        botao.addEventListener("click", ()=>{
+            menu.style.display = menu.style.display ==="flex"? "none":"flex"
+        })
+    </script>
+</body>
+</html
